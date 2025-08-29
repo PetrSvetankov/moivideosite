@@ -2,22 +2,25 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Оплата видео</title>
+  <title>Оплата доступа к видео</title>
 </head>
-<body>
-  <h2>Купить доступ к видео</h2>
-  <form method="POST" action="https://yoomoney.ru/quickpay/confirm.xml">
+<body style="font-family: Arial, sans-serif; text-align: center; padding: 50px;">
+  <h1>Оплата доступа к видео</h1>
+  <p>Стоимость доступа: <strong>300 ₽</strong></p>
+
+  <!-- Кнопка ЮMoney -->
+  <form method="POST" action="https://yoomoney.ru/quickpay/confirm">
     <input type="hidden" name="receiver" value="4100119302722646">
-    <input type="hidden" name="formcomment" value="Доступ к видео">
-    <input type="hidden" name="short-dest" value="Доступ к видео">
-    <input type="hidden" name="label" value="">
-    <input type="hidden" name="quickpay-form" value="shop">
-    <input type="hidden" name="targets" value="Оплата за видео">
-    <input type="hidden" name="sum" value="250" data-type="number">
+    <input type="hidden" name="formcomment" value="Оплата доступа к видео">
+    <input type="hidden" name="short-dest" value="Оплата доступа к видео">
+    <input type="hidden" name="label" value="moivideosite">
+    <input type="hidden" name="quickpay-form" value="donate">
+    <input type="hidden" name="targets" value="Доступ к видео">
+    <input type="hidden" name="sum" value="300" data-type="number">
     <input type="hidden" name="successURL" value="https://PetrSvetankov.github.io/moivideosite/video.html">
-    <label><input type="radio" name="paymentType" value="PC"> ЮMoney</label><br>
-    <label><input type="radio" name="paymentType" value="AC"> Банковская карта</label><br><br>
-    <input type="submit" value="Оплатить">
+    <button type="submit" style="padding: 10px 20px; font-size: 18px; background-color: #ffdb4d; border: none; border-radius: 6px; cursor: pointer;">
+      Оплатить 300 ₽ через ЮMoney
+    </button>
   </form>
 </body>
 </html>
